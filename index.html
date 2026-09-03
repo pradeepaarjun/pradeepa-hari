@@ -25,19 +25,24 @@
         <div class="nav-container">
 
             <a href="#home" class="logo">
-                P & H
+                Pradeepa & Hari
             </a>
 
             <nav>
-                <a href="#wedding">Wedding</a>
-                <a href="#travel">Travel</a>
-                <a href="#money-mobile">Money & Mobile</a>
-                <a href="#india">India Guide</a>
-                <a href="#madurai">Madurai</a>
-                <a href="#faq">FAQ</a>
+                <a href="#wedding" data-i18n="navWedding">Wedding</a>
+                <a href="#travel" data-i18n="navTravel">Travel</a>
+                <a href="#money-mobile" data-i18n="navMoney">Money & Mobile</a>
+                <a href="#india" data-i18n="navIndia">India Guide</a>
+                <a href="#madurai" data-i18n="navMadurai">Madurai</a>
+                <a href="#faq" data-i18n="navFaq">FAQ</a>
             </nav>
 
-            <button id="languageButton" class="language-button">
+            <button
+                id="languageButton"
+                class="language-button"
+                type="button"
+                aria-label="Switch language"
+            >
                 🇫🇷 Français
             </button>
 
@@ -66,7 +71,10 @@
                     Hari Hara Krishnan
                 </h1>
 
-                <p class="hero-subtitle">
+                <p
+                    class="hero-subtitle"
+                    data-i18n="heroSubtitle"
+                >
                     We're getting married
                 </p>
 
@@ -82,11 +90,19 @@
 
                 <div class="hero-buttons">
 
-                    <a href="#wedding" class="button button-primary">
+                    <a
+                        href="#wedding"
+                        class="button button-primary"
+                        data-i18n="heroWeddingButton"
+                    >
                         Our Wedding
                     </a>
 
-                    <a href="#travel" class="button button-secondary">
+                    <a
+                        href="#travel"
+                        class="button button-secondary"
+                        data-i18n="heroTravelButton"
+                    >
                         Plan Your Trip
                     </a>
 
@@ -109,30 +125,39 @@
                     🇫🇷 → 🇮🇳
                 </p>
 
-                <h2>
+                <h2 data-i18n="welcomeTitle">
                     Coming from France?
                 </h2>
 
-                <p class="section-intro">
+                <p
+                    class="section-intro"
+                    data-i18n="welcomeIntro"
+                >
                     We've created this little guide especially for you.
                 </p>
 
-                <p>
-                We know it's a long journey from France to India, 
-                so we've put together everything you need to make your trip easy, 
-                comfortable, and enjoyable — from arriving and settling in to making the most of the celebrations.
+                <p data-i18n="welcomeText">
+                    We know it's a long journey from France to India,
+                    so we've put together everything you need to make your
+                    trip easy, comfortable, and enjoyable — from arriving
+                    and settling in to making the most of the celebrations.
 
-                If it's your first time travelling to India, you're probably excited — and 
-                may have a few questions too. 
-                What should I wear? What will the food be like? 
-                How will I get around? And what can I expect at an Indian wedding?
+                    If it's your first time travelling to India, you're
+                    probably excited — and may have a few questions too.
+
+                    What should I wear? What will the food be like?
+                    How will I get around? And what can I expect at an
+                    Indian wedding?
                 </p>
 
-                <p>
+                <p data-i18n="welcomeReassurance">
                     Don't worry — we've got you covered.
                 </p>
 
-                <p class="highlight-text">
+                <p
+                    class="highlight-text"
+                    data-i18n="welcomeHighlight"
+                >
                     Come with an open mind, a curious heart
                     and an appetite! ❤️
                 </p>
@@ -150,11 +175,14 @@
 
             <div class="section-container">
 
-                <p class="section-label">
+                <p
+                    class="section-label"
+                    data-i18n="weddingLabel"
+                >
                     THE CELEBRATION
                 </p>
 
-                <h2>
+                <h2 data-i18n="weddingTitle">
                     Our Wedding
                 </h2>
 
@@ -166,7 +194,10 @@
                             ✨
                         </div>
 
-                        <p class="event-type">
+                        <p
+                            class="event-type"
+                            data-i18n="receptionLabel"
+                        >
                             RECEPTION
                         </p>
 
@@ -178,7 +209,7 @@
                             6:30 PM
                         </p>
 
-                        <p>
+                        <p data-i18n="receptionText">
                             Come dressed up, enjoy the food,
                             meet the family and celebrate with us!
                         </p>
@@ -192,7 +223,10 @@
                             💍
                         </div>
 
-                        <p class="event-type">
+                        <p
+                            class="event-type"
+                            data-i18n="ceremonyLabel"
+                        >
                             WEDDING CEREMONY
                         </p>
 
@@ -204,7 +238,7 @@
                             9:30 AM
                         </p>
 
-                        <p>
+                        <p data-i18n="ceremonyText">
                             Experience a traditional Sowrastra wedding
                             filled with flowers, blessings
                             and beautiful traditions.
@@ -217,7 +251,10 @@
 
                 <div class="venue">
 
-                    <p class="event-type">
+                    <p
+                        class="event-type"
+                        data-i18n="venueLabel"
+                    >
                         VENUE
                     </p>
 
@@ -227,8 +264,8 @@
 
                     <p>
                         136-G, Kamarajar Salai<br>
-        Madurai, Tamil Nadu 625009<br>
-        India
+                        Madurai, Tamil Nadu 625009<br>
+                        India
                     </p>
 
                     <a
@@ -236,6 +273,7 @@
                         target="_blank"
                         rel="noopener noreferrer"
                         class="map-button"
+                        data-i18n="mapButton"
                     >
                         📍 View on Google Maps
                     </a>
@@ -255,15 +293,21 @@
 
             <div class="section-container">
 
-                <p class="section-label">
+                <p
+                    class="section-label"
+                    data-i18n="travelLabel"
+                >
                     YOUR JOURNEY
                 </p>
 
-                <h2>
+                <h2 data-i18n="travelTitle">
                     France → Madurai
                 </h2>
 
-                <p class="section-intro">
+                <p
+                    class="section-intro"
+                    data-i18n="travelIntro"
+                >
                     Everything you need to know before coming to India.
                 </p>
 
@@ -271,45 +315,75 @@
                 <div class="journey">
 
                     <div class="journey-step">
+
                         <span>🇫🇷</span>
-                        <h3>France</h3>
-                        <p>
+
+                        <h3 data-i18n="journeyFranceTitle">
+                            France
+                        </h3>
+
+                        <p data-i18n="journeyFranceText">
                             Prepare your passport, visa,
                             flights and travel insurance.
                         </p>
+
                     </div>
+
 
                     <div class="journey-line"></div>
 
+
                     <div class="journey-step">
+
                         <span>✈️</span>
-                        <h3>India</h3>
-                        <p>
+
+                        <h3 data-i18n="journeyIndiaTitle">
+                            India
+                        </h3>
+
+                        <p data-i18n="journeyIndiaText">
                             Arrive in India and complete
-                            the necessary arrival formalities. 
+                            the necessary arrival formalities.
                         </p>
+
                     </div>
+
 
                     <div class="journey-line"></div>
 
+
                     <div class="journey-step">
+
                         <span>🌴</span>
-                        <h3>Madurai</h3>
-                        <p>
+
+                        <h3 data-i18n="journeyMaduraiTitle">
+                            Madurai
+                        </h3>
+
+                        <p data-i18n="journeyMaduraiText">
                             Make your way to Madurai
                             and settle in.
                         </p>
+
                     </div>
+
 
                     <div class="journey-line"></div>
 
+
                     <div class="journey-step">
+
                         <span>❤️</span>
-                        <h3>Wedding!</h3>
-                        <p>
+
+                        <h3 data-i18n="journeyWeddingTitle">
+                            Wedding!
+                        </h3>
+
+                        <p data-i18n="journeyWeddingText">
                             Eat, celebrate
                             and enjoy the experience.
                         </p>
+
                     </div>
 
                 </div>
@@ -318,39 +392,72 @@
                 <div class="info-grid">
 
                     <article class="info-card">
+
                         <span>🛂</span>
-                        <h3>Visa</h3>
-                        <p>
+
+                        <h3 data-i18n="visaTitle">
+                            Visa
+                        </h3>
+
+                        <p data-i18n="visaText">
                             Check the latest Indian visa
                             requirements before travelling.
                         </p>
+
                     </article>
 
+
                     <article class="info-card">
+
                         <span>🏨</span>
-                        <h3>Accommodation</h3>
-                        <p>
-                            We will arrange a hotel for you from January 27th to January 28th, 2027. 
+
+                        <h3 data-i18n="accommodationTitle">
+                            Accommodation
+                        </h3>
+
+                        <p data-i18n="accommodationText">
+                            We will arrange a hotel for you
+                            from January 27th to January 28th, 2027.
                             Hotel information will be added soon.
                         </p>
+
                     </article>
 
+
                     <article class="info-card">
+
                         <span>🚕</span>
-                        <h3>Transport</h3>
-                        <p>
-                            Use Uber or Ola (India's ride-hailing apps) — download before you arrive and register after getting an Indian Sim Card.
-                            Auto-rickshaws are common for short trips — agree the fare first, or ask your hotel to book one
+
+                        <h3 data-i18n="transportTitle">
+                            Transport
+                        </h3>
+
+                        <p data-i18n="transportText">
+                            Use Uber or Ola (India's ride-hailing apps) —
+                            download them before you arrive and register
+                            after getting an Indian SIM card.
+
+                            Auto-rickshaws are common for short trips —
+                            agree the fare first, or ask your hotel to
+                            book one.
                         </p>
+
                     </article>
 
+
                     <article class="info-card">
+
                         <span>📱</span>
-                        <h3>Stay Connected</h3>
-                        <p>
+
+                        <h3 data-i18n="connectedTitle">
+                            Stay Connected
+                        </h3>
+
+                        <p data-i18n="connectedText">
                             WhatsApp, mobile data,
                             useful apps and more.
                         </p>
+
                     </article>
 
                 </div>
@@ -358,51 +465,61 @@
             </div>
 
         </section>
+
+
         <!-- =========================
-            MONEY & MOBILE
-        ========================= -->
+             MONEY & MOBILE
+        ========================== -->
 
         <section id="money-mobile" class="section money-section">
 
             <div class="section-container">
 
-                <p class="section-label">
+                <p
+                    class="section-label"
+                    data-i18n="moneyLabel"
+                >
                     💳 MONEY & MOBILE
                 </p>
 
-                <h2>
+                <h2 data-i18n="moneyTitle">
                     Stay connected & pay easily in India
                 </h2>
 
-                <p class="section-intro">
+                <p
+                    class="section-intro"
+                    data-i18n="moneyIntro"
+                >
                     A few useful tips to help you stay connected
                     and make everyday payments during your trip.
                 </p>
 
 
                 <!-- =========================
-                    UPI & SIM
+                     UPI & SIM
                 ========================== -->
 
                 <div class="money-grid">
 
+
                     <!-- UPI -->
+
                     <article class="money-card">
 
                         <div class="info-icon">
                             💳
                         </div>
 
-                        <h3>
+                        <h3 data-i18n="upiTitle">
                             Paying with UPI
                         </h3>
 
-                        <p>
+                        <p data-i18n="upiText1">
                             UPI is used everywhere in India — at restaurants,
                             shops, taxis and many small local businesses.
                         </p>
 
-                        <p>
+                        <p data-i18n="upiText2">
                             Don't have an Indian bank account? No problem!
                             International visitors can use
                             <strong>UPI One World</strong>, a prepaid UPI wallet
@@ -410,17 +527,40 @@
                         </p>
 
                         <ol>
-                            <li>Download a supported UPI One World app.</li>
-                            <li>Complete the required verification.</li>
-                            <li>Add money using your international debit/credit card.</li>
-                            <li>Scan the merchant's UPI QR code.</li>
-                            <li>Pay directly in Indian Rupees (₹).</li>
+                            <li data-i18n="upiStep1">
+                                Download a supported UPI One World app.
+                            </li>
+
+                            <li data-i18n="upiStep2">
+                                Complete the required verification.
+                            </li>
+
+                            <li data-i18n="upiStep3">
+                                Add money using your international
+                                debit/credit card.
+                            </li>
+
+                            <li data-i18n="upiStep4">
+                                Scan the merchant's UPI QR code.
+                            </li>
+
+                            <li data-i18n="upiStep5">
+                                Pay directly in Indian Rupees (₹).
+                            </li>
                         </ol>
 
                         <div class="tip-box">
-                            💡 <strong>Our tip:</strong>
-                            Keep your French bank card and some Indian cash
-                            as a backup.
+
+                            💡
+                            <strong data-i18n="ourTip">
+                                Our tip:
+                            </strong>
+
+                            <span data-i18n="upiTip">
+                                Keep your French bank card and some Indian
+                                cash as a backup.
+                            </span>
+
                         </div>
 
                         <a
@@ -428,6 +568,7 @@
                             target="_blank"
                             rel="noopener noreferrer"
                             class="map-button"
+                            data-i18n="upiLearnMore"
                         >
                             🌐 Learn more about UPI One World
                         </a>
@@ -436,42 +577,65 @@
 
 
                     <!-- SIM -->
+
                     <article class="money-card">
 
                         <div class="info-icon">
                             📱
                         </div>
 
-                        <h3>
+                        <h3 data-i18n="simTitle">
                             Getting a SIM card
                         </h3>
 
-                        <p>
+                        <p data-i18n="simText1">
                             An Indian SIM can make your trip much easier for
                             mobile data, Google Maps, WhatsApp and local calls.
                         </p>
 
-                        <p>
+                        <p data-i18n="simText2">
                             The main mobile operators are
                             <strong>Jio, Airtel and Vi</strong>.
                         </p>
 
-                        <h4>
+                        <h4 data-i18n="simBringTitle">
                             What to bring
                         </h4>
 
                         <ul>
-                            <li>☑️ Passport</li>
-                            <li>☑️ Valid Indian visa / immigration document</li>
-                            <li>☑️ Your accommodation address in India</li>
-                            <li>☑️ Your phone</li>
+
+                            <li data-i18n="simItem1">
+                                ☑️ Passport
+                            </li>
+
+                            <li data-i18n="simItem2">
+                                ☑️ Valid Indian visa / immigration document
+                            </li>
+
+                            <li data-i18n="simItem3">
+                                ☑️ Your accommodation address in India
+                            </li>
+
+                            <li data-i18n="simItem4">
+                                ☑️ Your phone
+                            </li>
+
                         </ul>
 
                         <div class="tip-box">
-                            💡 <strong>Our tip:</strong>
-                            Buy your SIM from an official operator store or
-                            authorised retailer. If your phone supports eSIM,
-                            you can also check whether an eSIM option is available.
+
+                            💡
+                            <strong data-i18n="ourTip2">
+                                Our tip:
+                            </strong>
+
+                            <span data-i18n="simTip">
+                                Buy your SIM from an official operator store
+                                or authorised retailer. If your phone supports
+                                eSIM, you can also check whether an eSIM option
+                                is available.
+                            </span>
+
                         </div>
 
                     </article>
@@ -480,16 +644,16 @@
 
 
                 <!-- =========================
-                    KEEP FRENCH NUMBER
+                     KEEP FRENCH NUMBER
                 ========================== -->
 
                 <div class="money-tip">
 
-                    <h3>
+                    <h3 data-i18n="frenchNumberTitle">
                         📲 Keep your French number
                     </h3>
 
-                    <p>
+                    <p data-i18n="frenchNumberText">
                         If your phone supports dual SIM, you can keep your
                         French SIM and use an Indian SIM at the same time.
                     </p>
@@ -497,29 +661,34 @@
                     <div class="phone-setup">
 
                         <div>
+
                             <span>🇫🇷</span>
 
-                            <strong>
+                            <strong data-i18n="frenchSimTitle">
                                 French SIM
                             </strong>
 
-                            <small>
+                            <small data-i18n="frenchSimText">
                                 Keep your French number for SMS, banking
                                 and important messages.
                             </small>
+
                         </div>
 
+
                         <div>
+
                             <span>🇮🇳</span>
 
-                            <strong>
+                            <strong data-i18n="indianSimTitle">
                                 Indian SIM
                             </strong>
 
-                            <small>
+                            <small data-i18n="indianSimText">
                                 Use it for mobile data, Indian calls
                                 and everyday travel.
                             </small>
+
                         </div>
 
                     </div>
@@ -528,25 +697,36 @@
 
 
                 <!-- =========================
-                    RECOMMENDED COMBINATION
+                     RECOMMENDED COMBINATION
                 ========================== -->
 
                 <div class="money-tip highlight-tip">
 
-                    <h3>
+                    <h3 data-i18n="recommendedTitle">
                         ⭐ Our recommended combination
                     </h3>
 
-                    <p>
+                    <p data-i18n="recommendedText">
                         For a comfortable trip, we recommend having:
                     </p>
 
                     <div class="travel-checklist">
 
-                        <span>📱 Indian SIM / eSIM</span>
-                        <span>💳 UPI One World</span>
-                        <span>💳 French bank card</span>
-                        <span>💵 Some Indian cash</span>
+                        <span data-i18n="recommendedSim">
+                            📱 Indian SIM / eSIM
+                        </span>
+
+                        <span data-i18n="recommendedUpi">
+                            💳 UPI One World
+                        </span>
+
+                        <span data-i18n="recommendedCard">
+                            💳 French bank card
+                        </span>
+
+                        <span data-i18n="recommendedCash">
+                            💵 Some Indian cash
+                        </span>
 
                     </div>
 
@@ -556,108 +736,265 @@
 
         </section>
 
+
         <!-- =========================
              INDIA GUIDE
         ========================== -->
 
         <section id="india" class="section india-section">
+
             <div class="section-container">
-                <h2>
+
+                <h2 data-i18n="indiaTitle">
                     A little guide to India
                 </h2>
 
-                <p class="section-intro">
+                <p
+                    class="section-intro"
+                    data-i18n="indiaIntro"
+                >
                     A few things that may be different from France.
                 </p>
 
 
                 <div class="guide-grid">
 
+
+                    <!-- FOOD -->
+
                     <article class="guide-card">
+
                         <span>🍛</span>
-                        <h3>Food</h3>
-                        <p>
-                            Discover delicious South Indian dishes such as dosa, idli, sambar, parotta and South Indian thali. 
-                            If you'd like to order food to your hotel, you can use apps such as Zomato, Swiggy or Uber Eats. 
-                            For groceries and everyday essentials, apps like Blinkit and Instamart offer convenient home delivery.
+
+                        <h3 data-i18n="foodTitle">
+                            Food
+                        </h3>
+
+                        <p data-i18n="foodText">
+                            Discover delicious South Indian dishes such as
+                            dosa, idli, sambar, parotta and South Indian thali.
+
+                            If you'd like to order food to your hotel,
+                            you can use apps such as Zomato, Swiggy or
+                            Uber Eats.
+
+                            For groceries and everyday essentials, apps like
+                            Blinkit and Instamart offer convenient home delivery.
                         </p>
+
                     </article>
 
+
+                    <!-- WHAT TO WEAR -->
+
                     <article class="guide-card">
+
                         <span>👗</span>
-                        <h3>What to Wear</h3>
-        <ul>
-          <li>Light, breathable fabrics (cotton, linen)</li>
-          <li>One festive/formal outfit for the reception</li>
-          <li>Comfortable shoes that slip on/off easily (temples)</li>
-          <li>A scarf or shawl for temple visits</li>
-          <li>Basic medicine kit, sunscreen, mosquito repellent</li>
-          <li>Universal power adapter (India uses Type C/D/M, 230V)</li>
-        </ul>
+
+                        <h3 data-i18n="wearTitle">
+                            What to Wear
+                        </h3>
+
+                        <ul>
+
+                            <li data-i18n="wearItem1">
+                                Light, breathable fabrics (cotton, linen)
+                            </li>
+
+                            <li data-i18n="wearItem2">
+                                One festive/formal outfit for the reception
+                            </li>
+
+                            <li data-i18n="wearItem3">
+                                Comfortable shoes that slip on/off easily
+                                (temples)
+                            </li>
+
+                            <li data-i18n="wearItem4">
+                                A scarf or shawl for temple visits
+                            </li>
+
+                            <li data-i18n="wearItem5">
+                                Basic medicine kit, sunscreen,
+                                mosquito repellent
+                            </li>
+
+                            <li data-i18n="wearItem6">
+                                Universal power adapter
+                                (India uses Type C/D/M, 230V)
+                            </li>
+
+                        </ul>
+
                     </article>
 
+
+                    <!-- CULTURE -->
+
                     <article class="guide-card">
+
                         <span>🙏</span>
-                        <h3>Culture</h3>
-                        <p>
+
+                        <h3 data-i18n="cultureTitle">
+                            Culture
+                        </h3>
+
+                        <p data-i18n="cultureText">
                             Learn a few simple customs
                             before visiting temples and homes.
                         </p>
+
                     </article>
 
+
+                    <!-- WEATHER -->
+
                     <article class="guide-card">
+
                         <span>☀️</span>
-                        <h3>Weather</h3>
-                        <p>
-                            Madurai in late January is warm and dry — expect roughly 21°C at night to 32°C in the afternoon. 
-                            Mornings can feel pleasantly cool, especially for the 9:30 AM ceremony.
+
+                        <h3 data-i18n="weatherTitle">
+                            Weather
+                        </h3>
+
+                        <p data-i18n="weatherText">
+                            Madurai in late January is warm and dry —
+                            expect roughly 21°C at night to 32°C in the afternoon.
+
+                            Mornings can feel pleasantly cool,
+                            especially for the 9:30 AM ceremony.
                         </p>
+
                     </article>
+
+
+                    <!-- TAMIL -->
+
                     <article class="guide-card">
+
                         <span>🗣️</span>
-                        <h3>Tamil</h3>
-                        <p>
+
+                        <h3 data-i18n="tamilTitle">
+                            Tamil
+                        </h3>
+
+                        <p data-i18n="tamilText">
                             Learn a few words to impress
                             our families!
                         </p>
+
                     </article>
 
                 </div>
 
 
+                <!-- =========================
+                     DO / DON'T
+                ========================== -->
+
                 <div class="dos-donts">
+
+
+                    <!-- DO -->
 
                     <div>
 
-                        <h3>👍 Do</h3>
+                        <h3 data-i18n="doTitle">
+                            👍 Do
+                        </h3>
 
                         <ul>
-                            <li>Be curious and open-minded.</li>
-                            <li>Try the local food.</li>
-                            <li>Respect religious places.</li>
-                            <li>Dress modestly at temples — shoulders and knees covered.</li>
-                            <li>Remove your shoes before entering temples and many homes.</li>
-                            <li>Use your right hand for eating, giving, or receiving items.</li>
-                            <li>Greet people with hands pressed together — "Vanakkam" in Tamil.</li>
-                            <li>Drink bottled or filtered water only</li>
-                            <li>Ask permission before photographing people, especially inside temples.</li>
-                            <li>Ease into spicy food gradually and carry basic stomach medicine.</li>
+
+                            <li data-i18n="do1">
+                                Be curious and open-minded.
+                            </li>
+
+                            <li data-i18n="do2">
+                                Try the local food.
+                            </li>
+
+                            <li data-i18n="do3">
+                                Respect religious places.
+                            </li>
+
+                            <li data-i18n="do4">
+                                Dress modestly at temples —
+                                shoulders and knees covered.
+                            </li>
+
+                            <li data-i18n="do5">
+                                Remove your shoes before entering
+                                temples and many homes.
+                            </li>
+
+                            <li data-i18n="do6">
+                                Use your right hand for eating,
+                                giving, or receiving items.
+                            </li>
+
+                            <li data-i18n="do7">
+                                Greet people with hands pressed together —
+                                "Vanakkam" in Tamil.
+                            </li>
+
+                            <li data-i18n="do8">
+                                Drink bottled or filtered water only.
+                            </li>
+
+                            <li data-i18n="do9">
+                                Ask permission before photographing people,
+                                especially inside temples.
+                            </li>
+
+                            <li data-i18n="do10">
+                                Ease into spicy food gradually and carry
+                                basic stomach medicine.
+                            </li>
+
                         </ul>
 
                     </div>
 
 
+                    <!-- DON'T -->
+
                     <div>
 
-                        <h3>👎 Don't</h3>
+                        <h3 data-i18n="dontTitle">
+                            👎 Don't
+                        </h3>
 
                         <ul>
-                            <li>Don't offer or accept things with your left hand where possible.</li>
-                            <li>Don't enter restricted temple areas.</li>
-                            <li>Don't make jokes about religious traditions.</li>
-                            <li>Don't panic when you see Indian traffic! 😄 </li>
-                            <li>Don't be alarmed by traffic and honking — it's normal; cross roads confidently alongside locals.</li>
-                            <li>Don't wear shoes inside temples or point your feet at people, elders, or deities.</li>
+
+                            <li data-i18n="dont1">
+                                Don't offer or accept things with your
+                                left hand where possible.
+                            </li>
+
+                            <li data-i18n="dont2">
+                                Don't enter restricted temple areas.
+                            </li>
+
+                            <li data-i18n="dont3">
+                                Don't make jokes about religious traditions.
+                            </li>
+
+                            <li data-i18n="dont4">
+                                Don't panic when you see Indian traffic! 😄
+                            </li>
+
+                            <li data-i18n="dont5">
+                                Don't be alarmed by traffic and honking —
+                                it's normal. Be especially careful when
+                                crossing roads and use pedestrian crossings
+                                when available.
+                            </li>
+
+                            <li data-i18n="dont6">
+                                Don't wear shoes inside temples or point
+                                your feet at people, elders, or deities.
+                            </li>
+
                         </ul>
 
                     </div>
@@ -677,15 +1014,21 @@
 
             <div class="section-container">
 
-                <p class="section-label">
+                <p
+                    class="section-label"
+                    data-i18n="maduraiLabel"
+                >
                     DISCOVER
                 </p>
 
-                <h2>
+                <h2 data-i18n="maduraiTitle">
                     Welcome to Madurai
                 </h2>
 
-                <p class="section-intro">
+                <p
+                    class="section-intro"
+                    data-i18n="maduraiIntro"
+                >
                     You came all the way to India.
                     You should explore a little!
                 </p>
@@ -693,31 +1036,58 @@
 
                 <div class="places-grid">
 
+
                     <article class="place-card">
-                        <div class="place-placeholder">🛕</div>
-                        <h3>Meenakshi Amman Temple</h3>
-                        <p>
+
+                        <div class="place-placeholder">
+                            🛕
+                        </div>
+
+                        <h3>
+                            Meenakshi Amman Temple
+                        </h3>
+
+                        <p data-i18n="meenkashiText">
                             One of Madurai's most famous
                             landmarks.
                         </p>
+
                     </article>
 
+
                     <article class="place-card">
-                        <div class="place-placeholder">🏛️</div>
-                        <h3>Thirumalai Nayakkar Palace</h3>
-                        <p>
+
+                        <div class="place-placeholder">
+                            🏛️
+                        </div>
+
+                        <h3>
+                            Thirumalai Nayakkar Palace
+                        </h3>
+
+                        <p data-i18n="palaceText">
                             A beautiful historical palace
                             in Madurai.
                         </p>
+
                     </article>
 
+
                     <article class="place-card">
-                        <div class="place-placeholder">🍛</div>
-                        <h3>Local Food</h3>
-                        <p>
+
+                        <div class="place-placeholder">
+                            🍛
+                        </div>
+
+                        <h3 data-i18n="localFoodTitle">
+                            Local Food
+                        </h3>
+
+                        <p data-i18n="localFoodText">
                             Discover authentic Tamil
                             cuisine.
                         </p>
+
                     </article>
 
                 </div>
@@ -735,77 +1105,94 @@
 
             <div class="section-container">
 
-                <p class="section-label">
+                <p
+                    class="section-label"
+                    data-i18n="faqLabel"
+                >
                     QUESTIONS
                 </p>
 
-                <h2>
+                <h2 data-i18n="faqTitle">
                     Frequently Asked Questions
                 </h2>
 
 
                 <div class="faq-list">
 
+
                     <details>
-                        <summary>
+
+                        <summary data-i18n="faq1Question">
                             What should I wear to the wedding?
                         </summary>
 
-                        <p>
+                        <p data-i18n="faq1Answer">
                             Festive and comfortable clothing is perfect.
                             If you'd like to wear traditional Indian clothing,
                             we'd love that too!
                         </p>
+
                     </details>
 
 
                     <details>
-                        <summary>
+
+                        <summary data-i18n="faq2Question">
                             Is January hot in Madurai?
                         </summary>
 
-                        <p>
+                        <p data-i18n="faq2Answer">
                             Yes, January is considerably warmer than winter
                             in France. Bring lightweight clothing, sunscreen
                             and sunglasses.
                         </p>
+
                     </details>
 
 
                     <details>
-                        <summary>
+
+                        <summary data-i18n="faq3Question">
                             Do I need to know Tamil?
                         </summary>
 
-                        <p>
+                        <p data-i18n="faq3Answer">
                             Absolutely not! English is widely used in many
                             tourist and urban settings. And we'll teach you
                             a few Tamil words anyway. ❤️
                         </p>
+
                     </details>
 
 
                     <details>
-                        <summary>
+
+                        <summary data-i18n="faq4Question">
                             What about spicy food?
                         </summary>
 
-                        <p>
+                        <p data-i18n="faq4Answer">
                             Not everything is spicy. If you're sensitive to
                             spice, simply ask for less spicy food.
                         </p>
+
                     </details>
 
 
                     <details>
-                        <summary>
+
+                        <summary data-i18n="faq5Question">
                             Where are we staying?
                         </summary>
 
-                        <p>
-                            We will arrange a hotel for you from January 27th to January 28th, 2027. 
-                            Please let us know if you need any assistance finding a hotel in Madurai if you plan to arrive earlier.
+                        <p data-i18n="faq5Answer">
+                            We will arrange a hotel for you from
+                            January 27th to January 28th, 2027.
+
+                            Please let us know if you need any assistance
+                            finding a hotel in Madurai if you plan to arrive earlier.
                         </p>
+
                     </details>
 
                 </div>
@@ -823,21 +1210,24 @@
 
             <div class="section-container">
 
-                <p class="section-label">
+                <p
+                    class="section-label"
+                    data-i18n="finalLabel"
+                >
                     WITH LOVE
                 </p>
 
-                <h2>
+                <h2 data-i18n="finalTitle">
                     We can't wait to see you in Madurai ❤️
                 </h2>
 
-                <p>
+                <p data-i18n="finalText1">
                     You're travelling thousands of kilometres
                     to celebrate one of the most important
                     moments of our lives.
                 </p>
 
-                <p>
+                <p data-i18n="finalText2">
                     Come with an open mind, a curious heart
                     and an appetite!
                 </p>
@@ -863,7 +1253,7 @@
             Pradeepa & Hari Hara Krishnan
         </p>
 
-        <p>
+        <p data-i18n="footerLocation">
             Madurai · India · 2027
         </p>
 
