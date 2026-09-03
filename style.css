@@ -1,0 +1,1243 @@
+
+/* =========================================
+   COLOR PALETTE
+========================================= */
+
+:root {
+    --primary: #88beeb;
+    --primary-dark: #5f9fd2;
+    --primary-light: #dceefa;
+
+    --background: #fafcff;
+    --section-background: #eef7fd;
+
+    --card-background: #ffffff;
+
+    --text: #263746;
+    --text-light: #5f7180;
+
+    --border: #d6e7f3;
+
+    --gold: #c8a96b;
+    --gold-light: #f7f0df;
+}
+
+
+/* =========================================
+   GENERAL
+========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+
+    background: var(--background);
+    color: var(--text);
+
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.2;
+}
+
+h1,
+h2 {
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+p {
+    margin-top: 0;
+}
+
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    background: rgba(250, 252, 255, 0.95);
+
+    border-bottom: 1px solid var(--border);
+
+    backdrop-filter: blur(10px);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: auto;
+
+    padding: 16px 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+.logo {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 22px;
+    font-weight: bold;
+
+    color: var(--primary-dark);
+}
+
+nav {
+    display: flex;
+    gap: 24px;
+}
+
+nav a {
+    font-size: 13px;
+
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+
+    color: var(--text-light);
+
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: var(--primary-dark);
+}
+
+.language-button {
+    border: 1px solid #b9d8ed;
+
+    background: transparent;
+
+    padding: 8px 14px;
+
+    border-radius: 20px;
+
+    cursor: pointer;
+
+    color: var(--text);
+
+    transition: all 0.2s ease;
+}
+
+.language-button:hover {
+    background: var(--primary-light);
+    border-color: var(--primary);
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+    min-height: calc(100vh - 70px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 80px 24px;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #ffffff 0%,
+            #f4faff 55%,
+            #e5f3fc 100%
+        );
+}
+
+.hero-content {
+    max-width: 900px;
+}
+
+.eyebrow,
+.section-label {
+    margin-bottom: 20px;
+
+    font-size: 12px;
+
+    letter-spacing: 0.3em;
+
+    text-transform: uppercase;
+
+    color: var(--primary-dark);
+}
+
+.hero h1 {
+    margin: 0;
+
+    font-size: clamp(48px, 8vw, 92px);
+
+    font-weight: normal;
+}
+
+.hero h1 span {
+    color: var(--primary-dark);
+
+    font-style: italic;
+}
+
+.hero-subtitle {
+    margin-top: 30px;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 24px;
+
+    color: var(--text-light);
+}
+
+.divider {
+    width: 70px;
+    height: 1px;
+
+    margin: 30px auto;
+
+    background: var(--primary);
+}
+
+.wedding-date {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 22px;
+}
+
+.hero-location {
+    font-size: 13px;
+
+    letter-spacing: 0.25em;
+
+    text-transform: uppercase;
+
+    color: var(--text-light);
+}
+
+.hero-buttons {
+    margin-top: 45px;
+
+    display: flex;
+    justify-content: center;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+}
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.button {
+    padding: 13px 26px;
+
+    border-radius: 30px;
+
+    font-size: 12px;
+
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+
+    transition: all 0.2s ease;
+}
+
+.button-primary {
+    background: var(--primary);
+
+    color: white;
+
+    box-shadow: 0 5px 15px rgba(95, 159, 210, 0.20);
+}
+
+.button-primary:hover {
+    background: var(--primary-dark);
+
+    transform: translateY(-2px);
+}
+
+.button-secondary {
+    border: 1px solid var(--primary);
+
+    color: var(--primary-dark);
+
+    background: transparent;
+}
+
+.button-secondary:hover {
+    background: var(--primary);
+
+    color: white;
+}
+
+
+/* =========================================
+   SECTIONS
+========================================= */
+
+.section {
+    padding: 110px 24px;
+}
+
+.section-container {
+    max-width: 1050px;
+
+    margin: auto;
+}
+
+.section h2 {
+    margin-top: 0;
+
+    font-size: clamp(38px, 5vw, 60px);
+
+    font-weight: normal;
+}
+
+.section-intro {
+    max-width: 650px;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 21px;
+
+    color: var(--text-light);
+}
+
+
+/* =========================================
+   WELCOME
+========================================= */
+
+.welcome {
+    text-align: center;
+}
+
+.welcome .section-container {
+    max-width: 750px;
+}
+
+.welcome p:not(.section-label):not(.section-intro):not(.highlight-text) {
+    color: var(--text-light);
+}
+
+.highlight-text {
+    margin-top: 35px;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 23px;
+
+    color: var(--primary-dark);
+}
+
+
+/* =========================================
+   WEDDING
+========================================= */
+
+.wedding-section {
+    background: var(--section-background);
+}
+
+.event-grid {
+    margin-top: 55px;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+.event-card {
+    padding: 45px 35px;
+
+    text-align: center;
+
+    background: var(--card-background);
+
+    border: 1px solid var(--border);
+
+    border-radius: 16px;
+
+    box-shadow: 0 8px 25px rgba(75, 130, 170, 0.05);
+}
+
+.event-card.featured {
+    border: 1px solid var(--primary);
+}
+
+.event-icon {
+    font-size: 30px;
+
+    margin-bottom: 20px;
+}
+
+.event-type {
+    font-size: 11px;
+
+    letter-spacing: 0.2em;
+
+    color: var(--primary-dark);
+}
+
+.event-card h3 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 28px;
+
+    font-weight: normal;
+}
+
+.event-time {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 24px;
+
+    color: var(--primary-dark);
+}
+
+.venue {
+    margin-top: 50px;
+
+    padding: 35px;
+
+    text-align: center;
+
+    border-top: 1px solid #c5deef;
+    border-bottom: 1px solid #c5deef;
+}
+
+.venue h3 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 25px;
+
+    font-weight: normal;
+}
+
+.text-link {
+    display: inline-block;
+
+    margin-top: 10px;
+
+    color: var(--primary-dark);
+
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   JOURNEY
+========================================= */
+
+.journey {
+    margin-top: 60px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 15px;
+}
+
+.journey-step {
+    flex: 1;
+
+    text-align: center;
+}
+
+.journey-step span {
+    display: block;
+
+    font-size: 35px;
+
+    margin-bottom: 15px;
+}
+
+.journey-step h3 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 20px;
+
+    font-weight: normal;
+}
+
+.journey-step p {
+    font-size: 14px;
+
+    color: var(--text-light);
+}
+
+.journey-line {
+    width: 50px;
+    height: 1px;
+
+    background: #b9d9ef;
+}
+
+
+/* =========================================
+   TRAVEL / INFO CARDS
+========================================= */
+
+.info-grid {
+    margin-top: 70px;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.info-card {
+    padding: 30px;
+
+    border: 1px solid var(--border);
+
+    background: var(--card-background);
+
+    border-radius: 16px;
+
+    box-shadow: 0 8px 25px rgba(75, 130, 170, 0.05);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 15px 35px rgba(75, 130, 170, 0.12);
+}
+
+.info-card span {
+    font-size: 28px;
+}
+
+.info-card h3 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 22px;
+
+    font-weight: normal;
+
+    color: var(--primary-dark);
+}
+
+
+/* =========================================
+   INDIA GUIDE
+========================================= */
+
+.india-section {
+    background: var(--section-background);
+}
+
+.guide-grid {
+    margin-top: 55px;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.guide-card {
+    padding: 30px;
+
+    background: var(--card-background);
+
+    border: 1px solid var(--border);
+
+    border-radius: 16px;
+
+    box-shadow: 0 8px 25px rgba(75, 130, 170, 0.05);
+}
+
+.guide-card span {
+    font-size: 30px;
+}
+
+.guide-card h3 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 23px;
+
+    font-weight: normal;
+
+    color: var(--primary-dark);
+}
+
+.guide-card p {
+    color: var(--text-light);
+}
+
+.dos-donts {
+    margin-top: 60px;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 30px;
+}
+
+.dos-donts > div {
+    padding: 35px;
+
+    background: var(--card-background);
+
+    border-radius: 16px;
+
+    border: 1px solid var(--border);
+}
+
+.dos-donts h3 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 25px;
+
+    font-weight: normal;
+
+    color: var(--primary-dark);
+}
+
+.dos-donts li {
+    margin-bottom: 8px;
+}
+
+
+/* =========================================
+   MADURAI
+========================================= */
+
+.places-grid {
+    margin-top: 55px;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.place-card {
+    background: white;
+
+    border: 1px solid var(--border);
+
+    border-radius: 16px;
+
+    overflow: hidden;
+
+    box-shadow: 0 8px 25px rgba(75, 130, 170, 0.05);
+}
+
+.place-placeholder {
+    min-height: 180px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 60px;
+
+    background: #e5f3fc;
+}
+
+.place-card h3,
+.place-card p {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.place-card h3 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 22px;
+
+    font-weight: normal;
+
+    color: var(--primary-dark);
+}
+
+.place-card p {
+    padding-bottom: 15px;
+
+    color: var(--text-light);
+}
+
+
+/* =========================================
+   FAQ
+========================================= */
+
+.faq-section {
+    background: var(--section-background);
+}
+
+.faq-list {
+    max-width: 800px;
+
+    margin-top: 50px;
+}
+
+details {
+    padding: 20px 0;
+
+    border-bottom: 1px solid #cfe3f1;
+}
+
+summary {
+    cursor: pointer;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 20px;
+
+    color: var(--text);
+}
+
+details p {
+    margin-top: 15px;
+
+    color: var(--text-light);
+}
+
+
+/* =========================================
+   FINAL MESSAGE
+========================================= */
+
+.final-section {
+    padding: 130px 24px;
+
+    text-align: center;
+
+    background: var(--primary-dark);
+
+    color: white;
+}
+
+.final-section .section-container {
+    max-width: 700px;
+}
+
+.final-section .section-label {
+    color: #e8f5fd;
+}
+
+.final-section h2 {
+    font-size: clamp(38px, 5vw, 58px);
+
+    font-weight: normal;
+}
+
+.final-section p {
+    color: #eef8fd;
+}
+
+.signature {
+    margin-top: 40px;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 25px;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    padding: 30px 20px;
+
+    text-align: center;
+
+    background: #416f94;
+
+    color: #dceefa;
+
+    font-size: 13px;
+}
+
+
+/* =========================================
+   MONEY & MOBILE
+========================================= */
+
+.money-section {
+    width: 100%;
+}
+
+.money-section .section-container {
+    width: 90%;
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+}
+
+
+/* =========================================
+   MONEY CARDS
+========================================= */
+
+.money-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 30px;
+
+    margin-top: 40px;
+}
+
+.money-card {
+    box-sizing: border-box;
+
+    width: 100%;
+
+    padding: 32px;
+
+    background: var(--card-background);
+
+    border: 1px solid var(--border);
+
+    border-radius: 18px;
+
+    box-shadow: 0 10px 30px rgba(75, 130, 170, 0.08);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.money-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 15px 35px rgba(75, 130, 170, 0.13);
+}
+
+.money-card h3 {
+    color: var(--primary-dark);
+
+    margin-bottom: 15px;
+}
+
+.money-card h4 {
+    color: var(--primary-dark);
+
+    margin-top: 25px;
+
+    margin-bottom: 12px;
+}
+
+.money-card p {
+    color: var(--text-light);
+
+    line-height: 1.7;
+
+    margin-bottom: 15px;
+}
+
+.money-card ol,
+.money-card ul {
+    padding-left: 22px;
+
+    color: var(--text-light);
+
+    line-height: 1.9;
+}
+
+.money-card li {
+    margin-bottom: 5px;
+}
+
+
+/* =========================================
+   MONEY ICON
+========================================= */
+
+.info-icon {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: var(--primary-light);
+
+    border-radius: 50%;
+
+    font-size: 25px;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================================
+   MONEY TIP BOX
+========================================= */
+
+.money-card .tip-box {
+    margin-top: 22px;
+
+    padding: 16px 18px;
+
+    background: #eaf5fc;
+
+    border-left: 4px solid var(--primary);
+
+    border-radius: 8px;
+
+    color: #496477;
+
+    font-size: 0.95rem;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   MONEY FULL-WIDTH BOXES
+========================================= */
+
+.money-tip {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    margin-top: 30px;
+
+    padding: 30px;
+
+    background: var(--card-background);
+
+    border: 1px solid var(--border);
+
+    border-radius: 18px;
+
+    box-shadow: 0 8px 25px rgba(75, 130, 170, 0.06);
+}
+
+.money-tip h3 {
+    color: var(--primary-dark);
+
+    margin-bottom: 12px;
+}
+
+.money-tip p {
+    color: var(--text-light);
+
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   PHONE SETUP
+========================================= */
+
+.money-section .phone-setup {
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 20px;
+
+    margin-top: 25px;
+}
+
+.money-section .phone-setup > div {
+    box-sizing: border-box;
+
+    padding: 22px;
+
+    background: #f1f8fd;
+
+    border-radius: 14px;
+
+    border: 1px solid #e0eef7;
+}
+
+.money-section .phone-setup span {
+    display: block;
+
+    font-size: 28px;
+
+    margin-bottom: 8px;
+}
+
+.money-section .phone-setup strong {
+    display: block;
+
+    color: var(--primary-dark);
+
+    margin-bottom: 6px;
+}
+
+.money-section .phone-setup small {
+    display: block;
+
+    color: var(--text-light);
+
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   RECOMMENDED COMBINATION
+========================================= */
+
+.money-section .highlight-tip {
+    background: linear-gradient(
+        135deg,
+        #f5fbff,
+        #e8f5fd
+    );
+}
+
+
+/* =========================================
+   RECOMMENDED ITEMS
+========================================= */
+
+.money-section .travel-checklist {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+    margin-top: 20px;
+}
+
+.money-section .travel-checklist span {
+    padding: 12px 18px;
+
+    background: white;
+
+    border: 1px solid #cfe3f1;
+
+    border-radius: 30px;
+
+    color: var(--primary-dark);
+
+    font-weight: 600;
+}
+
+
+/* =========================================
+   GOOGLE MAPS BUTTON
+========================================= */
+
+.map-button {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin-top: 20px;
+
+    padding: 13px 22px;
+
+    background: var(--primary);
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 30px;
+
+    font-weight: 600;
+
+    transition: all 0.3s ease;
+
+    box-shadow: 0 5px 15px rgba(95, 159, 210, 0.18);
+}
+
+.map-button:hover {
+    background: var(--primary-dark);
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 800px) {
+
+    /* NAVIGATION */
+
+    .nav-container {
+        padding: 12px 16px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .language-button {
+        margin-left: auto;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        min-height: 90vh;
+
+        padding: 70px 20px;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .hero-subtitle {
+        font-size: 21px;
+    }
+
+
+    /* SECTIONS */
+
+    .section {
+        padding: 80px 20px;
+    }
+
+
+    /* GENERAL GRIDS */
+
+    .event-grid,
+    .guide-grid,
+    .places-grid,
+    .info-grid,
+    .dos-donts {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* JOURNEY */
+
+    .journey {
+        flex-direction: column;
+    }
+
+    .journey-line {
+        width: 1px;
+
+        height: 35px;
+    }
+
+
+    /* MONEY */
+
+    .money-section .section-container {
+        width: 92%;
+    }
+
+    .money-grid {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+    .money-card {
+        padding: 24px;
+    }
+
+    .money-tip {
+        padding: 24px;
+    }
+
+    .money-section .phone-setup {
+        grid-template-columns: 1fr;
+    }
+
+    .money-section .travel-checklist {
+        flex-direction: column;
+    }
+
+    .money-section .travel-checklist span {
+        width: 100%;
+
+        box-sizing: border-box;
+
+        text-align: center;
+    }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero-subtitle {
+        font-size: 19px;
+    }
+
+    .wedding-date {
+        font-size: 19px;
+    }
+
+    .section h2 {
+        font-size: 38px;
+    }
+
+    .section-intro {
+        font-size: 18px;
+    }
+
+    .event-card {
+        padding: 35px 24px;
+    }
+
+    .money-card {
+        padding: 22px;
+    }
+
+    .money-tip {
+        padding: 22px;
+    }
+}
