@@ -350,7 +350,19 @@ const translations = {
 
         do10:
             "Ease into spicy food gradually and carry basic stomach medicine.",
-
+        do11:
+            "Look for vegetarian restaurants: Vegetarian food is widely available in India. "+
+            'You can search Google Maps for “vegetarian restaurant” or “pure vegetarian restaurant ' +
+            "when looking for places to eat.",
+        do12:
+            "If you smoke, use the smoking areas.",
+        do13:
+            "If you want a drink, look for a hotel or bar that serves alcohol. "+
+            "Drinking is generally less common and less visible than in France.",
+        d014:
+            "Ask about the spice level. If you don't like spicy food, ask for mild or less spicy.",
+        do15:
+            "Check before ordering. Tell the waiter if you are vegetarian and ask about the ingredients.",
         /* =========================
            DON'T
         ========================== */
@@ -378,7 +390,13 @@ const translations = {
         dont6:
             "Don't wear shoes inside temples or point your feet at " +
             "people, elders, or deities.",
+        dont7:
+            "Don't smoke where it isn't allowed. Look for the designated smoking area.",
+        dont8:
+            "Don't assume every dish is vegetarian. When in doubt, ask the waiter.",
 
+        dont9:
+            "Don't assume every restaurant serves alcohol. Hotels and licensed bars are usually the easiest places to find it.",
         /* =========================
            MADURAI
         ========================== */
@@ -471,6 +489,13 @@ const translations = {
         /* =========================
            FOOTER
         ========================== */
+        countdownLabel: "OUR BIG DAY", 
+        countdownTitle: "27 January 2027", 
+        countdownDaysLabel: "DAYS", 
+        countdownHoursLabel: "HOURS", 
+        countdownMinutesLabel: "MINUTES", 
+        countdownSecondsLabel: "SECONDS", 
+        countdownMessage: "Until we celebrate together ❤️",
 
         footerLocation:
             "Madurai · India · 2027"
@@ -855,6 +880,19 @@ const translations = {
 
         do10:
             "Commencez doucement avec les plats épicés et prévoyez un médicament de base pour l'estomac.",
+        do11:
+            "Cherchez des restaurants végétariens : Les restaurants végétariens sont très nombreux en Inde. "+
+            'Sur Google Maps, recherchez "vegetarian restaurant » ou « pure vegetarian restaurant" ' +
+            "pour trouver facilement des adresses adaptées.",
+        do12:
+            "Si vous fumez, utilisez les espaces fumeurs.",
+        do13:
+            "Si vous souhaitez boire de l'alcool, cherchez un hôtel ou un bar qui en sert. "+
+            "L'alcool est généralement moins présent et moins visible qu'en France.",
+        do14:
+            "Demandez le niveau de piment. Si vous n'aimez pas les plats épicés, demandez un plat doux ou peu épicé.",
+        do15:
+            "Demandez avant de commander. Précisez que vous êtes végétarien et demandez au serveur si le plat est bien végétarien.",
 
         /* =========================
            DON'T
@@ -883,7 +921,13 @@ const translations = {
         dont6:
             "Ne portez pas de chaussures dans les temples et ne pointez pas vos pieds " +
             "vers les personnes, les anciens ou les divinités.",
+        dont7:
+            "Ne fumez pas dans les endroits où c'est interdit. Utilisez les espaces fumeurs prévus à cet effet.",
+        dont8:
+            "Ne supposez pas qu'un plat est végétarien. En cas de doute, demandez au serveur.",
 
+        dont9:
+            "Ne supposez pas que tous les restaurants servent de l'alcool. Les hôtels et les bars autorisés sont généralement les endroits les plus faciles pour en trouver.",
         /* =========================
            MADURAI
         ========================== */
@@ -975,6 +1019,14 @@ const translations = {
 
         finalText2:
             "Venez avec l'esprit ouvert, le cœur curieux et de l'appétit !",
+
+        countdownLabel: "LE GRAND JOUR", 
+        countdownTitle: "27 janvier 2027", 
+        countdownDaysLabel: "JOURS", 
+        countdownHoursLabel: "HEURES", 
+        countdownMinutesLabel: "MINUTES", 
+        countdownSecondsLabel: "SECONDES", 
+        countdownMessage: "Avant de célébrer ensemble ❤️",
 
         /* =========================
            FOOTER
@@ -1078,3 +1130,62 @@ if (savedLanguage === "fr") {
     setLanguage("en");
 
 }
+
+/* =========================
+   LIVE WEDDING COUNTDOWN
+   ========================= */
+
+// Wedding reception starts at 6:30 PM in Madurai, India
+// IST = UTC+05:30
+const weddingDate = new Date("2027-01-27T18:30:00+05:30");
+
+function updateCountdown() {
+    const now = new Date();
+    const difference = weddingDate.getTime() - now.getTime();
+
+    const daysElement = document.getElementById("countdownDays");
+    const hoursElement = document.getElementById("countdownHours");
+    const minutesElement = document.getElementById("countdownMinutes");
+    const secondsElement = document.getElementById("countdownSeconds");
+
+    // Make sure the countdown exists on the page
+    if (
+        !daysElement ||
+        !hoursElement ||
+        !minutesElement ||
+        !secondsElement
+    ) {
+        return;
+    }
+
+    // Wedding has started
+    if (difference <= 0) {
+        daysElement.textContent = "00";
+        hoursElement.textContent = "00";
+        minutesElement.textContent = "00";
+        secondsElement.textContent = "00";
+        return;
+    }
+
+    const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+    const hours = Math.floor(
+        (difference / (1000 * 60 * 60)) % 24
+    );
+    const minutes = Math.floor(
+        (difference / (1000 * 60)) % 60
+    );
+    const seconds = Math.floor(
+        (difference / 1000) % 60
+    );
+
+    daysElement.textContent = String(days).padStart(2, "0");
+    hoursElement.textContent = String(hours).padStart(2, "0");
+    minutesElement.textContent = String(minutes).padStart(2, "0");
+    secondsElement.textContent = String(seconds).padStart(2, "0");
+}
+
+// Update immediately
+updateCountdown();
+
+// Update every second
+setInterval(updateCountdown, 1000);
