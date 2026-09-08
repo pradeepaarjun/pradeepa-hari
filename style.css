@@ -1241,3 +1241,96 @@ footer {
         padding: 22px;
     }
 }
+/* =========================
+   COUNTDOWN
+   ========================= */
+
+.countdown-section {
+    background: var(--section-background);
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.countdown-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.countdown-container h2 {
+    margin: 10px 0 35px;
+    color: var(--text);
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.countdown {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.countdown-item {
+    background: var(--card-background);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 25px 15px;
+    box-shadow: 0 6px 20px rgba(80, 120, 150, 0.08);
+}
+
+.countdown-item span {
+    display: block;
+    color: var(--primary-dark);
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 10px;
+    font-variant-numeric: tabular-nums;
+}
+
+.countdown-item small {
+    display: block;
+    color: var(--text-light);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.countdown-message {
+    margin-top: 30px;
+    color: var(--text-light);
+    font-size: 1rem;
+    font-style: italic;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    .countdown-section {
+        padding: 55px 15px;
+    }
+
+    .countdown-container h2 {
+        font-size: 1.6rem;
+        margin-bottom: 25px;
+    }
+
+    .countdown {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .countdown-item {
+        padding: 20px 10px;
+    }
+
+    .countdown-item span {
+        font-size: 2.2rem;
+    }
+
+    .countdown-item small {
+        font-size: 0.65rem;
+        letter-spacing: 1px;
+    }
+}
