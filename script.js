@@ -359,7 +359,7 @@ const translations = {
         do13:
             "If you want a drink, look for a hotel or bar that serves alcohol. "+
             "Drinking is generally less common and less visible than in France.",
-        d014:
+        do14:
             "Ask about the spice level. If you don't like spicy food, ask for mild or less spicy.",
         do15:
             "Check before ordering. Tell the waiter if you are vegetarian and ask about the ingredients.",
