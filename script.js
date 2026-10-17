@@ -388,8 +388,7 @@ const translations = {
             "pedestrian crossings when available.",
 
         dont6:
-            "Don't wear shoes inside temples or point your feet at " +
-            "people, elders, or deities.",
+            "Don't wear shoes inside temples and consider carrying socks.",
         dont7:
             "Don't smoke where it isn't allowed. Look for the designated smoking area.",
         dont8:
@@ -436,6 +435,7 @@ const translations = {
             "What should I wear to the wedding?",
 
         faq1Answer:
+            "Please avoid wearing black or white to the wedding. " +
             "Festive and comfortable clothing is perfect. " +
             "If you'd like to wear traditional Indian clothing, " +
             "we'd love that too!",
@@ -469,6 +469,11 @@ const translations = {
             "January 28th, 2027. Please let us know if you need any " +
             "assistance finding a hotel in Madurai if you plan to arrive earlier.",
 
+        // Train tickets
+        trainTitle: "Booking train tickets",
+        trainText: "Planning to explore India by train? Book your tickets through the official Indian Railways website. We recommend booking in advance." + 
+        "Train tickets opens 60 days before your journey date.",
+        trainButton: "Book train tickets ↗",
         /* =========================
            FINAL MESSAGE
         ========================== */
@@ -919,8 +924,7 @@ const translations = {
             "les passages piétons lorsqu'ils sont disponibles.",
 
         dont6:
-            "Ne portez pas de chaussures dans les temples et ne pointez pas vos pieds " +
-            "vers les personnes, les anciens ou les divinités.",
+            "Ne porte pas de chaussures à l'intérieur des temples et pense à emmener des chaussettes.",
         dont7:
             "Ne fumez pas dans les endroits où c'est interdit. Utilisez les espaces fumeurs prévus à cet effet.",
         dont8:
@@ -968,6 +972,7 @@ const translations = {
             "Comment dois-je m'habiller pour le mariage ?",
 
         faq1Answer:
+            "Merci d'éviter de porter du noir ou du blanc au mariage. "+ 
             "Une tenue élégante et confortable est parfaite. " +
             "Si vous souhaitez porter une tenue traditionnelle indienne, " +
             "nous en serons ravis !",
@@ -1003,6 +1008,11 @@ const translations = {
             "Si vous prévoyez d'arriver plus tôt et avez besoin d'aide pour " +
             "trouver un hôtel à Madurai, n'hésitez pas à nous le faire savoir.",
 
+        // Billets de train
+        trainTitle: "Réserver des billets de train",
+        trainText: "Vous souhaitez découvrir l'Inde en train ? Réservez vos billets sur le site officiel des chemins de fer indiens. Nous vous conseillons de réserver à l'avance."+ 
+        "Les billets de train s'ouvrent 60 jours avant la date de votre voyage.",
+        trainButton: "Réserver des billets ↗",
         /* =========================
            FINAL MESSAGE
         ========================== */
