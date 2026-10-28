@@ -468,6 +468,12 @@ const translations = {
             "We will arrange a hotel for you from January 27th to " +
             "January 28th, 2027. Please let us know if you need any " +
             "assistance finding a hotel in Madurai if you plan to arrive earlier.",
+        faq6Question:
+            "Do you have any recommendations for less spicy food?",
+        faq6Answer: 
+            "Yes! 😊 There are plenty of delicious options that are usually mild, "+
+            "such as idly, dosa, chapati, poori, idiyappam, appam and puttu. However, some dishes and side dishes may still be spicy. " +
+            "We recommend asking the waiter for a mild version and checking the spice level before ordering.",
 
         // Train tickets
         trainTitle: "Booking train tickets",
@@ -1007,6 +1013,14 @@ const translations = {
             "Nous réserverons un hôtel pour vous du 27 au 28 janvier 2027. " +
             "Si vous prévoyez d'arriver plus tôt et avez besoin d'aide pour " +
             "trouver un hôtel à Madurai, n'hésitez pas à nous le faire savoir.",
+        
+        faq6Question:
+            "Avez-vous des recommandations pour des plats peu épicés ?",
+        faq6Answer: 
+            "Oui ! 😊 Il existe plusieurs plats délicieux généralement peu épicés, "+
+            "comme les idlis, les dosas, les chapatis, les pooris, les idiyappams, les appams et les puttus. "+
+            "Cependant, certains plats et accompagnements peuvent être épicés." +
+            "Nous vous conseillons de demander au serveur un plat peu épicé et de vérifier le niveau de piment avant de commander.",
 
         // Billets de train
         trainTitle: "Réserver des billets de train",
@@ -1029,7 +1043,6 @@ const translations = {
 
         finalText2:
             "Venez avec l'esprit ouvert, le cœur curieux et de l'appétit !",
-
         countdownLabel: "LE GRAND JOUR", 
         countdownTitle: "27 janvier 2027", 
         countdownDaysLabel: "JOURS", 

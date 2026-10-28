@@ -1335,3 +1335,21 @@ footer {
     }
 }
 
+.hero .rsvp-button {
+  display: inline-block;
+  margin-top: 24px;
+  padding: 14px 32px;
+  background: var(--primary);
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 30px;
+  box-shadow: 0 4px 12px rgba(95, 159, 210, 0.2);
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.hero .rsvp-button:hover {
+  background: var(--primary-dark);
+  transform: translateY(-2px);
+}
