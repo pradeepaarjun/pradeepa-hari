@@ -111,9 +111,12 @@ const translations = {
         visaTitle: "Visa",
 
         visaText:
-            "Check the latest Indian visa requirements " +
-            "before travelling.",
+            "If you hold a French passport, you need to apply for an Indian visa before travelling to India. " +
+            "You can apply online for an Indian e-Tourist Visa. " +
+            "The fee for a 30-day e-Tourist Visa is US$25. "+
+            "Please check the official website for requirements, fees and processing information.",
 
+        visaLink: "Apply for an e-Visa ↗",
         accommodationTitle: "Accommodation",
 
         accommodationText:
@@ -642,8 +645,11 @@ const translations = {
             "Visa",
 
         visaText:
-            "Vérifiez les dernières conditions d'entrée et de visa " +
-            "pour l'Inde avant votre départ.",
+            "Si vous possédez un passeport français, vous devez obtenir un visa indien avant votre départ pour l'Inde. " +
+            "Vous pouvez faire une demande de visa électronique touristique en ligne. " +
+            "Le tarif du visa touristique de 30 jours est de 25 USD. " +
+            "Veuillez vérifier les conditions, les tarifs et les délais de traitement sur le site officiel.", 
+        visaLink: "Demander un e-Visa ↗",
 
         accommodationTitle:
             "Hébergement",
